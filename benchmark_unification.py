@@ -343,7 +343,7 @@ def run_baseline(
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=cfg.grad_clip)
             optim_b.step()
 
-            mse_acc += float(loss.detach().item())
+            mse_acc += float(mse.detach().item())
             n_batches += 1
 
         train_steps = step + 1

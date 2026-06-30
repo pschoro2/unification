@@ -73,6 +73,8 @@ python3 benchmark_unification.py \
   --output benchmark_results.json
 ```
 
+python3 benchmark_unification.py --unification-steps 60 --noself-steps 60 --baseline-steps 60 --include-rnn-baseline --dataset-length 600 --batch-size 32 --seq-len 20 --seeds 11,12 --tasks smooth,chaotic --print-every 20 --output artifacts/benchmark_apples_fixed.json
+
 Benchmark output:
 
 - prints per-task diagnostics
